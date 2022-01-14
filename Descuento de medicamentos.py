@@ -8,10 +8,11 @@ print("  Descuento de Medicamentos ")
 medicamento = int(input("Ingrese el precio del medicamento"))
 
 '''Se aplica el Descuento'''
-descuento =  (35 * medicamento) //100
-
+porcentaje_a_descontar = 35
+calculo_descuento =  (porcentaje_a_descontar * medicamento) //100
+ 
 'Se le aplica el descuento al monto inicial que ingreso el usuario'
-monto_final = medicamento - descuento
+monto_final = medicamento - calculo_descuento
 
 '''Luego se muestra el resultado''' 
-print("El precio actual del Medicamento ingresado ", medicamento, " $ pesos ", " El monto del descuento es de ", descuento, " $ pesos", "Y el monto final a pagar es de ", monto_final, " $ pesos " )
+print("El precio actual del Medicamento ingresado ", medicamento, " $ pesos ", " El monto del descuento es de ", calculo_descuento, " $ pesos", "Y el monto final a pagar es de ", monto_final, " $ pesos " )
